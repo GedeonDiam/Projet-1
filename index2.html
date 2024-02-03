@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cd1eb87d27.js" crossorigin="anonymous"></script>
+
+    <title>Cultura Navbar</title>
+
+</head>
+
+<body>
+    <div class="navbar  fixed-top">
+        <div class="logo"><img src="booktop_logo_uploaded_transparent.png" alt="" width="135"
+                style="color: #8f99e1; margin-left: 15px;"></div>
+        <ul>
+            <li><a href=""><b>Magasins</b></a></li>
+            <li><a href=""><b>Culturaddict</b></a></li>
+            <li><a href=""><b>Communauté</b></a></li>
+            <li><a href=""><b>Service clients</b></a></li>
+        </ul>
+        <input type="text" class="search-box" placeholder="Rechercher un livre, un jeu..." maxlength="8" size="45"
+            style="font-style: italic;">
+        <div class="user-info">
+            <span><a href=""><b>Identifiez-vous</b> <label for="Identifiez-vous"><i class="fa-regular fa-user"
+                            style="color: #A8A8A8;  font-size: 20px;"></i></a></span>
+            <span><a href=""><b>Mon panier</b> <label for="Mon panier"></label><i
+                        class="fa-sharp fa-solid fa-basket-shopping"
+                        style="color: #A8A8A8;  font-size: 20px;"></i></a></span>
+        </div>
+    </div>
+    <main>
+        <div class="titre">
+            <p><span class="univers">L'univers</span> <br><span class="livre"><b>Livre</b></span></p>
+        </div>
+
+
+        <div>
+
+        </div>
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-interval="false">
+            <!-- <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div> -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="bd.avif" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>BD</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="mangas.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Mangas</h1>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="romance.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Romance</h1>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width:15rem; height: 15rem; ">
+                                    <img src="aventure.jpg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Aventure</h1>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="policier.jpg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Policier</h1>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="economie.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Economie</h1>
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="action.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Action</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="jeunee.jpg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Jeunesse</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="cuisine.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Cuisine</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width:15rem; height: 15rem;">
+                                    <img src="voyage.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Voyage</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="art.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Arts</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="economie.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Economie</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="container  ">
+                        <div class="row">
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="sport.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Sport</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="musique.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Musique</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 ">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="theatre.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Theâtre</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width:15rem; height: 15rem;">
+                                    <img src="horeur.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Horreur</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="economie.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Economie</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card shadow-sm" style="width: 15rem; height: 15rem;">
+                                    <img src="economie.jpeg" class="d-block w-100 img" alt="First Slide">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h1>Economie</h1>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ajouter plus de carousel-item ici si nécessaire -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+
+        </div>
+    </main><br><br>
+
+    <div class="ligne">
+        <div class="menu">
+            <h1>Les nouveautés</h1>
+            <a href="#"></a><div class="menu-button">Nouveautés à petits prix</div></a>
+            <a href="#"></a><div class="menu-button">Nouveautés Ebook</div></a>
+            <a href="#"></a><div class="menu-button">Coups de cœur</div></a>
+        </div>
+    </div>
+
+    <div class="foot">
+        <footer>
+            <div class="social">
+                <p><em><b><u>Réseaux Sociaux</u></b></em></p>
+            </div><br>
+            <div class="row">
+                <div class="col-3">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href=""> <i class="fa-brands fa-whatsapp "></i></a>
+                </div>
+                <div class="col-3">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="col-3">
+                    <a href=""> <i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
