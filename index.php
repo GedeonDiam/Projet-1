@@ -10,22 +10,45 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css' rel='stylesheet' />
   </head>
   <body>
-    <?php require_once("template/header.php"); ?>
+    <?php
+     require_once("src/template/header.php"); 
+    
+
+  if(isset($_GET["page"])){
+  $page=$_GET["page"];
+  }else{
+    $page="accueil";
+  }
+ 
+    switch ($page) {
+      case "accueil":
+        require_once("src/page/accueil.php");
+        break;
+      case "magasin":
+        require_once("src/page/magasin.php");
+        break;
+      case "culturadict":
+        require_once("src/page/culturadict.php");
+        break;
+      case "communaute":
+        require_once("src/page/communaute.php");
+        break;
+      case "service clients":
+        require_once("src/page/service_clients.php");
+        break;
+      default:
+        require_once("src/page/accueil.php");
+        break;
+      }
 
 
 
-   
 
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
