@@ -1,7 +1,7 @@
 -- Active: 1707006406721@@127.0.0.1@3306
 
-CREATE DATABASE booktop;
-use booktop;
+CREATE DATABASE monsite;
+use monsite;
 
 CREATE TABLE IF NOT EXISTS categorie (
     id int(11) NOT NULL AUTO_INCREMENT,
@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS categorie (
 
 
 CREATE TABLE IF NOT EXISTS livre (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     titre VARCHAR(255) NOT NULL,
     auteur VARCHAR(255) NOT NULL,
     prix float,
@@ -20,25 +20,25 @@ CREATE TABLE IF NOT EXISTS livre (
     description VARCHAR(255) NOT NULL,
     id_categorie INT NOT NULL,
     FOREIGN KEY (id_categorie) REFERENCES categorie(id)
-)
+);
 
 CREATE TABLE IF NOT EXISTS utilisateur (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255) NOT NULL,
     prenom VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     image VARCHAR(255) NOT NULL
-)
+);
 
 CREATE TABLE IF NOT EXISTS commande (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    id_utilisateur INT NOT NULL,
-    id_livre INT NOT NULL,
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id_utilisateur INT(11) NOT NULL,
+    id_livre INT(11) NOT NULL,
     date_commande DATETIME NOT NULL,
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id),
     FOREIGN KEY (id_livre) REFERENCES livre(id)
-)
+);
 
 
 INSERT INTO categorie (nom) VALUES 

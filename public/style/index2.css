@@ -9,49 +9,9 @@ body {
 }
 
 
-.navbar {
-  background-image: linear-gradient(to right, #ff4b1f, brown, black);
-  padding: 10px 20px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
 
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  text-decoration: none;
-}
-.navbar ul li a:hover {
-  color: white; 
-}
-.navbar ul li {
-  padding: 5px 10px;
-}
 
-.navbar .search-box {
-  background: white;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
 
-.navbar .search-box::placeholder {
-  color: #333;
-}
-
-.navbar .user-info {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar .user-info span {
-  cursor: pointer;
-}
 
 a {
   text-decoration: none;

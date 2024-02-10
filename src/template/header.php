@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary pt-0">
   <div class="container-fluid p-3" style=" background: linear-gradient(#0B162C, #1C2942, #3B556D);">
     <a class="navbar-brand" href="index.php?page=accueil"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,12 +20,12 @@
         
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Communauté</a>
+          <a class="nav-link text-light" href="index.php?page=communaute">Communauté</a>
         </li>
         
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light" href="#">Service clients</a>
+          <a class="nav-link text-light" href="index.php?page=service_clients">Service clients</a>
         </li>
         
        
@@ -35,7 +35,7 @@
         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search "></i></button>
       </form>
       <div class="user-info">
-      <button class="btn" style="background: #5FC2BA;" type="submit"><i class="bi bi-person"></i></button>
+      <button class="btn" style="background: #5FC2BA;" type="submit"><a href="index.php?page=identification"><i class="bi bi-person"></i></a></button>
       <button type="button" class="btn btn-outline-light"><i class="bi bi-cart"></i></button>
 
         </div>
