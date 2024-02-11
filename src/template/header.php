@@ -35,7 +35,16 @@
         <button class="btn btn-outline-light" type="submit"><i class="bi bi-search "></i></button>
       </form>
       <div class="user-info">
-      <button class="btn" style="background: #5FC2BA;" type="submit"><a href="index.php?page=identification"><i class="bi bi-person"></i></a></button>
+      <?php
+      if (isset($_SESSION["connexion"])) {
+        echo '<button class="btn" style="background: #5FC2BA;" type="submit"><a class="text-light" href="index.php?page=identification">'.$_SESSION["connexion"]["nom"]  .'</a></button>';
+        echo '<a href="index.php?page=deconnection" class="ms-2"><button class="btn bg-danger"  type="submit"><i class="bi bi-box-arrow-left"></i></button></a>';
+      }else{
+        echo '<a href="index.php?page=identification"><button class="btn" style="background: #5FC2BA;" type="submit"><i class="bi bi-person"></i></button></a>';
+      }
+
+    ?>
+
       <button type="button" class="btn btn-outline-light"><i class="bi bi-cart"></i></button>
 
         </div>
